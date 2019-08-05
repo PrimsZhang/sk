@@ -87,16 +87,17 @@ header .search ul li{font:14px/2 "";margin: 3px}
 #main .floorBox .floor .tip h3{font:600 15px/2 "";margin-left: 20px;}
 
 #main .floorBox .floor .goods{display: flex;border-bottom:1px solid #bbb}
-#main .floorBox .floor .goods .left{width:210px;padding: 10px;border-right: 1px solid #bbb;}
-#main .floorBox .floor .goods .left ul{display: flex;flex-wrap: wrap;}
-#main .floorBox .floor .goods .left ul li{width:90px;}
-#main .floorBox .floor .goods .left ul li a{display:block;height:25px;}
-#main .floorBox .floor .goods .left .side{display: block;width:205px;}
+#main .floorBox .floor .goods .left{width:210px;padding: 10px;border-right: 1px solid #bbb;position: relative;}
+#main .floorBox .floor .goods .left ul{display: flex;flex-wrap: wrap;width:210px;}
+#main .floorBox .floor .goods .left ul li{width:90px;font:12px/2 ""}
+#main .floorBox .floor .goods .left ul li a{display:block;}
+#main .floorBox .floor .goods .left .side{display: block;position: absolute;top:250px}
 #main .floorBox .floor .goods .right{margin-left: 25px;}
 #main .floorBox .floor .goods .right ul{display: flex;flex-wrap: wrap}
 #main .floorBox .floor .goods .right ul li{width: 150px;padding:10px 17px;}
 #main .floorBox .floor .goods .right ul li a{display: block}
-#main .floorBox .floor .goods .right ul li a p{font:12px/2 "";padding-left: 10px}
+#main .floorBox .floor .goods .right ul li a img{width: 160px;height: 160px;}
+#main .floorBox .floor .goods .right ul li a p{font:12px/2 "";padding-left: 10px;height: 48px;overflow: hidden;}
 #main .floorBox .floor .goods .right ul li a span{font:14px/2 "";color: #dd2727;padding-left: 10px}
 
 #main .botNews{margin-top: 40px}
@@ -134,3 +135,7 @@ header .search ul li{font:14px/2 "";margin: 3px}
 #footer .copy ul li:nth-child(4) a{width: 62px;background-position: -208px 0;}
 #footer .copy ul li:nth-child(5) a{width: 70px;background-position: -530px 0;}
 #footer .copy ul li:nth-child(6) a{width: 110px;background-position: -609px 0;}
+
+#aside{width: 60px;position: fixed;z-index:199px;top:80px;left:30px;}
+#aside ul{}
+#aside ul li{height:60px;background: #dd2727;opacity:.7;;color: #fff;font:600 12px/30px "";text-align: center;padding:0 10px;word-break: normal;border-top: 1px solid #fff;cursor: pointer;}

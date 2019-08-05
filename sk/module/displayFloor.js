@@ -1,6 +1,7 @@
 class LisFloor{
     constructor(box){
         this.box = box;
+        this.floor = this.box.children(".floor");
         this.init();
         // this.add();
     }
@@ -14,50 +15,72 @@ class LisFloor{
             }
         })
     }
+    
     display(){
-        var str = "";
-        var classArr = [];
-        for(var j = 0;j<this.res.length-1;j++){
-            classArr.push(this.res[j].class)
+        var arr = [];
+        for(var i = 0;i<this.res.length;i++){
+            arr.push(this.res[i].class);
         }
-        console.log(classArr)
-        // for(var i=0;i<14;i++){
-        //     str+=
-        //         `<div class="floor">
-        //             <div class="tip">
-        //                 <i>1F</i>
-        //                 <h3>隐形眼镜</h3>
-        //             </div>
-        //             <div class="goods">
-        //                 <div class="left">
-        //                     <ul>
-        //                         <li><a href="#">博士伦</a></li>
-        //                         <li><a href="#">爱尔康视康</a></li>
-        //                         <li><a href="#">库博</a></li>
-        //                         <li><a href="#">强生</a></li>
-        //                         <li><a href="#">海昌</a></li>
-        //                         <li><a href="#">Clalen</a></li>
-        //                         <li><a href="#">美若康</a></li>
-        //                         <li><a href="#">实瞳</a></li>
-        //                         <li><a href="#">琦芙莉</a></li>
-        //                         <li><a href="#">库博光学</a></li>
-        //                     </ul>
-        //                     <a class="side" href="#"><img src="https://pic2.vsigo.cn/ADVP/205-250/201851410570232.jpg?v=2019080210"></a>
-        //                 </div>
-        //                 <div class="right">
-        //                     <ul>
-        //                         <li>
-        //                             <a href="detail.html">
-        //                                 <img src="">
-        //                                 <p class="name">库博佰视明月抛3片装</p>
-        //                                 <span class="price">￥79.00</span>
-        //                             </a>
-        //                         </li>
-        //                     </ul>
-        //                 </div>
-        //             </div>
-        //         </div>`;
-        // }
-        // this.box.html(str);
+        function unique (arr){
+            return Array.from(new Set(arr));
+        }
+        var classArr = unique(arr);
+        var o = [];
+        var t = [];
+        var th = [];
+
+        for(var m = 0;m<this.res.length;m++){
+            if(this.res[m].class == classArr[0]){
+                o.push(this.res[m]);
+            }
+            if(this.res[m].class == classArr[1]){
+                t.push(this.res[m]);
+            }
+            if(this.res[m].class == classArr[2]){
+                th.push(this.res[m]);
+            }
+        }
+        // console.log(o)
+        // console.log(t)
+        // console.log(th)
+
+        var strO = "";
+        for(var i=0;i<10;i++){
+            strO+=
+                `<li>
+                    <a href="detail.html">
+                        <img src="${o[i].url1}" index="${o[i].id}">
+                        <p class="name">${o[i].name}</p>
+                        <span class="price">￥${o[i].price}</span>
+                    </a>
+                </li>`;
+        }
+        $(this.floor[0].children[1].children[1].children).html(strO);
+
+        var strT = "";
+        for(var i=0;i<10;i++){
+            strT+=
+                `<li>
+                    <a href="detail.html">
+                        <img src="${t[i].url1}" index="${t[i].id}">
+                        <p class="name">${t[i].name}</p>
+                        <span class="price">￥${t[i].price}</span>
+                    </a>
+                </li>`;
+        }
+        $(this.floor[1].children[1].children[1].children).html(strT);
+
+        var strTh = "";
+        for(var i=0;i<10;i++){
+            strTh+=
+                `<li>
+                    <a href="detail.html">
+                        <img src="${th[i].url1}" index="${th[i].id}">
+                        <p class="name">${th[i].name}</p>
+                        <span class="price">￥${th[i].price}</span>
+                    </a>
+                </li>`;
+        }
+        $(this.floor[2].children[1].children[1].children).html(strTh);
     }
 }
