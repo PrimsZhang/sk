@@ -1,17 +1,23 @@
 require.config({
     baseUrl:"../module",
-    path:{
+    paths:{
         displayHot:"displayHot",
-        dispalyFloor:"dispalyFloor",
+        displayFloor:"displayFloor",
         tab:"tab",
-        jq:"../libs/jQuery.banner.1.1.0"
+        floor:"floor",
+        jq:"../libs/jquery"
     }
 })
 
-require(["displayHot","dispalyFloor","tab","jq"],function(h,f,t,_){
-    
+require(["displayHot","displayFloor","tab","floor","jq"],function(h,f,t,fl,_){
+    new h($("#main .hot .goods"));
+    new f($("#main .floorBox"));
+    new t($("#banner .bannerTop .classify"));
+    new fl({
+        btn:document.querySelector("#aside ul"),
+        floor:$(".floor")
+    })
 })
-
 (function(){
     $("#main .hot ul").find("li").on("mouseover",function(){
         $(this).css({
@@ -36,9 +42,6 @@ require(["displayHot","dispalyFloor","tab","jq"],function(h,f,t,_){
         })
     });
 
-    new Tab($("#banner .bannerTop .classify"));
-    new Lis($("#main .hot .goods"));
-    new LisFloor($("#main .floorBox"));
 })();
 
 

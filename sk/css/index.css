@@ -86,7 +86,7 @@ header .search ul li{font:14px/2 "";margin: 3px}
 #main .floorBox .floor .tip i{display: block;width:30px;height: 30px;font:15px/2 "";text-align: center;color: #fff;background: forestgreen;border-radius: 50%;}
 #main .floorBox .floor .tip h3{font:600 15px/2 "";margin-left: 20px;}
 
-#main .floorBox .floor .goods{display: flex;border-bottom:1px solid #bbb}
+#main .floorBox .floor .goods{display: flex;border-bottom:1px solid #bbb;height: 513px;}
 #main .floorBox .floor .goods .left{width:210px;padding: 10px;border-right: 1px solid #bbb;position: relative;}
 #main .floorBox .floor .goods .left ul{display: flex;flex-wrap: wrap;width:210px;}
 #main .floorBox .floor .goods .left ul li{width:90px;font:12px/2 ""}
