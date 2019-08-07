@@ -24,6 +24,7 @@ class Page{
         this.load();
         this.addEvent();
         this.getCookie();
+
     }
     load(){
         var that = this;
@@ -33,6 +34,7 @@ class Page{
                 that.res = res;
                 that.display();
                 that.createPage();
+                that.add();
             }
         })
     }
@@ -42,7 +44,7 @@ class Page{
             if(i<this.res.length){
                 str += `<li prims="${this.res[i].id}">
                             <a href="detail.html">
-                                <img src="${this.res[i].url1}">
+                                <img src="${this.res[i].url1}" index="${this.res[i].id}" class="shop">
                                 <h3>${this.res[i].name}</h3>
                                 <h4>${this.res[i].des}</h4>
                                 <span>￥${this.res[i].price}</span>
@@ -120,6 +122,15 @@ class Page{
             }
         }
         setCookie("goods",JSON.stringify(this.goods));
+    }
+    add(){
+        var that= $(this.cont);
+        that.on("click",function(e){
+            if(e.target.className == "shop"){
+                that.id = e.target.getAttribute("index");
+                localStorage.setItem("sk",that.id)
+            }
+        })
     }
 }
 
