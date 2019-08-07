@@ -1,0 +1,74 @@
+#shortcut{background: #f2f2f2;}
+#shortcut .margin{width: 1190px;margin:0 auto;display: flex;justify-content: space-between;}
+#shortcut .margin a:hover{color:#dd2727;}
+#shortcut .margin .marginL{display: flex;}
+#shortcut .margin a{font:12px/30px "";margin: 10px;}
+#shortcut .margin .marginR{display: flex;align-items: center}
+#shortcut .margin .marginR span{font:12px/30px "";color: #999}
+#shortcut .margin .marginR ul{display: flex;}
+#shortcut .margin .marginR ul li i{background: url(../img/pic1.png) no-repeat;display: inline-block;margin-right:5px;vertical-align: middle}
+#shortcut .margin .marginR ul li:first-child i{width:24px;height:24px;background-position: -52px -3px;}
+#shortcut .margin .marginR ul li:nth-child(2) i{width: 15px;height: 14px;background-position:-6px -5px;}
+#shortcut .margin .marginR ul li:nth-child(3) i{width: 9px;height:15px;background-position: -35px -5px;}
+
+header{width: 1190px;margin: 30px auto;display: flex;align-items: center;}
+header .logo{display: block;}
+header .logo i{display: block;width: 219px;height: 91px;background: url(../img/pic1.png) no-repeat;background-position:-83px 0;}
+header .search{margin-left: 60px;}
+header .search .box{display: flex;}
+header .search .box .txt{width: 510px;height: 29px;border: 1px solid #c40000;padding: 3px 0 3px 6px}
+header .search .box .btn{width: 80px;height: 37px;color: #fff;background: #c40000;font:16px "";border: #c40000}
+header .search ul{display: flex;}
+header .search ul li{font:14px/2 "";margin: 3px}
+
+#menu{height:38px;background: #dd2727;}
+#menu .margin{width: 1190px;margin:0 auto;}
+#menu .margin ul{display: flex;margin-left: 200px;}
+#menu .margin ul li{padding:0 10px;}
+#menu .margin ul li:hover{background: #c40000}
+#menu .margin ul li a{font:16px/38px "";color: #fff;}
+
+#banner{background: url(../img/bg.jpg) no-repeat center;margin: 0 auto;width: 100%;}
+#banner .margin{width: 1190px;margin: 0 auto;}
+#banner .margin .main{position: relative;display: flex;}
+#banner .margin .main .cla{position: absolute;top:-38px;width: 200px}
+#banner .margin .main .cla .tip{width:190px;font:16px/38px "";color:#fff;background: #c40000;padding-left: 10px;}
+#banner .margin .main .cla:hover .box{display: block}
+#banner .margin .main .cla .box{position: absolute;z-index: 100;width:200px;display: none}
+#banner .margin .main .cla .box .classify{}
+#banner .margin .main .cla .box .classify .list{margin: 0;width:200px;background: #fff}
+#banner .margin .main .cla .box .classify .list li:hover{box-shadow: 0 0 5px #ccc;}
+#banner .margin .main .cla .box .classify .list li a{display: block;height:64px;display: flex;}
+#banner .margin .main .cla .box .classify .list li a span{display: block;width: 39px;height: 64px;background: url(../img/icon.png) no-repeat;}
+#banner .margin .main .cla .box .classify .list li:nth-child(2) a span{background-position: 0 -64px;}
+#banner .margin .main .cla .box .classify .list li:nth-child(3) a span{background-position: 0 -128px;}
+#banner .margin .main .cla .box .classify .list li:nth-child(4) a span{background-position: 0 -192px;}
+#banner .margin .main .cla .box .classify .list li:nth-child(5) a span{background-position: 0 -256px;}
+#banner .margin .main .cla .box .classify .list li p{font:16px/64px "";}
+#banner .margin .main .cla .box .classify .menubox{width:400px;height:300px;margin-left: 200px;position: absolute;top:0;}
+#banner .margin .main .cla .box .classify .menubox div{width:400px;height:300px;background:rgba(255,255,255);box-shadow: -3px 3px 3px #ccc;display: none;overflow: hidden;}
+#banner .margin .main .cla .box .classify .menubox div dl{display: flex;flex-wrap: wrap;margin-top: 40px;}
+#banner .margin .main .cla .box .classify .menubox div dl dd{}
+#banner .margin .main .cla .box .classify .menubox div dl dd a{display: block;width: 100px;font:14px/2 "";text-align: center;}
+
+#banner .margin .main .catalog{width: 1150px;margin:0 auto;padding:20px 0;}
+#banner .margin .main .catalog dl{display: flex;font:14px/50px "";border:1px solid #ccc;border-bottom: 0;}
+#banner .margin .main .catalog dl:last-child{border-bottom: 1px solid #ccc;}
+#banner .margin .main .catalog dl dt{width: 200px;padding-left: 10px;}
+#banner .margin .main .catalog dl dd{margin: 0 30px;}
+#banner .margin .main .catalog dl dd a{display: block;color: #0054bb}
+
+#goods-menu{width: 1190px;margin:20px auto;border: 1px solid #ccc;}
+#goods-menu .list{margin: 10px;display: flex;}
+#goods-menu .list li{padding:10px;}
+#goods-menu .list li a{display: block;}
+#goods-menu .list li a img{width:210px;height: 210px;}
+#goods-menu .list li a h3{font: 14px/2 "";padding-left: 10px;}
+#goods-menu .list li a h4{font: 14px/2 "";color: #dd2727;padding-left: 10px;}
+#goods-menu .list li a span{font:600 16px/2 "";color: #dd2727;padding-left: 10px;}
+#goods-menu .list li a i{display: block;border:1px solid #999;width: 40px;font:12px/2 "";text-align: center;margin-left: 10px;}
+#goods-menu .pageWarp{display: flex;justify-content: center;align-items: center;margin-bottom: 10px;}
+#goods-menu .pageWarp .btnL{background:#dd2727;padding: 10px;color: #fff;cursor: pointer;}
+#goods-menu .pageWarp .btnR{background:#dd2727;padding: 10px;color: #fff;cursor: pointer;}
+#goods-menu .pageWarp .pageCont{display: flex;}
+#goods-menu .pageWarp .pageCont li{margin:0 15px;}

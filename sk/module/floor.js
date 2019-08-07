@@ -13,7 +13,6 @@ define(function(){
                 $("html").stop().animate({
                     scrollTop:t.offset().top
                 });
-                $(e.target).css()
             })
         }
     }
