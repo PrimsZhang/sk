@@ -2,6 +2,7 @@
 #shortcut .margin{width: 1190px;margin:0 auto;display: flex;justify-content: space-between;}
 #shortcut .margin a:hover{color:#dd2727;}
 #shortcut .margin .marginL{display: flex;}
+#shortcut .margin .marginL p{font:12px/50px "";}
 #shortcut .margin a{font:12px/30px "";margin: 10px;}
 #shortcut .margin .marginR{display: flex;align-items: center}
 #shortcut .margin .marginR span{font:12px/30px "";color: #999}

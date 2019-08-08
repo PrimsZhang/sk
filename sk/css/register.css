@@ -6,8 +6,9 @@
 #main{height: 425px;background:rgba(204,204,204,.3)}
 #main .margin{width: 1190px;height:350px;margin:0 auto;display: flex;justify-content:flex-end;}
 #main .margin .box{width:300px;background: #fff;border:1px solid #ccc;margin:50px 100px 0 0;}
-#main .margin .box .us,.pa{font:14px/2 "";margin-top: 30px;text-align: center}
-#main .margin .box .bt{text-align: center;margin: 60px 0}
+#main .margin .box{width:300px;background: #fff;border:1px solid #ccc;margin:50px 100px 0 0;}
+#main .margin .box .us,.pa,.ph,.em,.bt{font:14px/2 "";margin-top: 20px;text-align: center}
+#main .margin .box .bt{text-align: center;margin: 30px 0}
 #main .margin .box .bt input{width: 100px;font:16px/2 ""}
 #main .margin .box p{padding-left: 10px;margin-bottom: 10px}
 
