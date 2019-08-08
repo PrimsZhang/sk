@@ -32,7 +32,7 @@ header .search ul li{font:14px/2 "";margin: 3px}
 #banner .margin{width: 1190px;margin: 0 auto;}
 #banner .margin .bannerTop{position: relative;height: 320px;display: flex;}
 #banner .margin .bannerTop .cla{position: absolute;top:-38px;}
-#banner .margin .bannerTop .cla .tip{width:190px;font:16px/38px "";color:#fff;background: #c40000;padding-left: 10px;}
+#banner .margin .bannerTop .cla .tip{display: block;width:190px;font:16px/38px "";color:#fff;background: #c40000;padding-left: 10px;}
 
 #banner .margin .bannerTop .cla .box{position: absolute;z-index: 100;}
 #banner .margin .bannerTop .cla .box .classify{width:200px;}

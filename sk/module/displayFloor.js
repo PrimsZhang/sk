@@ -4,7 +4,6 @@ define(function(){
             this.box = box;
             this.floor = this.box.children(".floor");
             this.init();
-            // this.add();
         }
         init(){
             var that = this;
@@ -45,9 +44,9 @@ define(function(){
             var strO = "";
             for(var i=0;i<10;i++){
                 strO+=
-                    `<li>
-                        <a href="detail.html">
-                            <img src="${o[i].url1}" index="${o[i].id}">
+                    `<li  prims="${this.res[i].id}">
+                        <a href="detail.html" target="blank">
+                            <img src="${o[i].url1}" index="${o[i].id}" class="shop">
                             <p class="name">${o[i].name}</p>
                             <span class="price">￥${o[i].price}</span>
                         </a>
@@ -58,9 +57,9 @@ define(function(){
             var strT = "";
             for(var i=0;i<10;i++){
                 strT+=
-                    `<li>
-                        <a href="detail.html">
-                            <img src="${t[i].url1}" index="${t[i].id}">
+                    `<li prims="${this.res[i].id}">
+                        <a href="detail.html" target="blank">
+                            <img src="${t[i].url1}" index="${t[i].id}" class="shop">
                             <p class="name">${t[i].name}</p>
                             <span class="price">￥${t[i].price}</span>
                         </a>
@@ -71,15 +70,40 @@ define(function(){
             var strTh = "";
             for(var i=0;i<10;i++){
                 strTh+=
-                    `<li>
-                        <a href="detail.html">
-                            <img src="${th[i].url1}" index="${th[i].id}">
+                    `<li prims="${this.res[i].id}">
+                        <a href="detail.html" target="blank">
+                            <img src="${th[i].url1}" index="${th[i].id}" class="shop">
                             <p class="name">${th[i].name}</p>
                             <span class="price">￥${th[i].price}</span>
                         </a>
                     </li>`;
             }
             $(this.floor[2].children[1].children[1].children).html(strTh);
+            var goodsFloor = document.querySelectorAll("#main .goods .right ul")
+            this.add(goodsFloor)
+        }
+        add(goodsFloor){
+            var that1 = $(goodsFloor[0]);
+            that1.on("click",function(e){
+                if(e.target.className == "shop"){
+                    that1.id = e.target.getAttribute("index");
+                    localStorage.setItem("sk",that1.id)
+                }
+            })
+            var that2 = $(goodsFloor[1]);
+            that2.on("click",function(e){
+                if(e.target.className == "shop"){
+                    that2.id = e.target.getAttribute("index");
+                    localStorage.setItem("sk",that2.id)
+                }
+            })
+            var that3 = $(goodsFloor[2]);
+            that3.on("click",function(e){
+                if(e.target.className == "shop"){
+                    that3.id = e.target.getAttribute("index");
+                    localStorage.setItem("sk",that3.id)
+                }
+            })
         }
     }
     return LisFloor;

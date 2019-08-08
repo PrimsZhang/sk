@@ -43,7 +43,7 @@ class Page{
         for(var i=this.index*this.num;i<(this.index+1)*this.num;i++){
             if(i<this.res.length){
                 str += `<li prims="${this.res[i].id}">
-                            <a href="detail.html">
+                            <a href="detail.html" target="blank">
                                 <img src="${this.res[i].url1}" index="${this.res[i].id}" class="shop">
                                 <h3>${this.res[i].name}</h3>
                                 <h4>${this.res[i].des}</h4>

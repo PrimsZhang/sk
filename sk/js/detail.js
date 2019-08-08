@@ -126,12 +126,13 @@ $(function(){
                                     <p>评价：<span>14256</span>条</p>
                                 </div>
                                 <p class="explain">15点前下单，其他快递16点前下单，当天发货。</p>
-                                <a href="#" class="buy">加入购物车</a>`
+                                <a href="shopcar.html" class="buy" target="blank">加入购物车</a>`
                     }
                 }
             }
             intru.innerHTML = str2;
-        }        
+        }  
+        
     }
     new Pics();
 })
